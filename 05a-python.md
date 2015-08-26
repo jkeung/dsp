@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Lists and tuples are similar because they both hold an array of values. They differ because tuples are immutable, they cannot be changed or edited, only recreated. Tuples are used as keys in dictionaries because the keys in dictionaries are immutable.
 
 ---
 
@@ -20,7 +20,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Python lists and sets are similar because they are both a collection of elements. They differ because lists can contain duplicates and are ordered, whereas sets only contain unique values and are unordered. Sets are faster in terms of finding if an element exists, but is slower when it comes to iterating over its contents. This is because sets are unordered.s
 
 ---
 
@@ -28,7 +28,15 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Lambda is an anonymous function that is used to create functions "on-the-fly". Here is an example:
+g = lambda x:x*2
+g(3)
+6
+
+x = [2,4,6,1,3,5]
+f = lambda x:sorted(x)
+f(x)
+[1,2,3,4,5,6]
 
 ---
 
@@ -36,8 +44,9 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+A list comprehension is a concise way to create a list.
+Ex. 1
+[(x,y,z) for x in arr for y in arr for z in arr if x+y+z= 0]
 ---
 
 ###Complete the following problems by editing the files below:

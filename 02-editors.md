@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will use vim. I have used vim in the past and I am most comfortable with this one.
 
 ---
 
@@ -61,6 +61,8 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will use Sublime Text. I have used Sublime before and it is very easy to modify code and it color codes useful keywords very well. A list of useful shortcuts can be found here: http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/keyboard_shortcuts_osx.html
+I can customize my editor for which language, tab size, theme, etc.
+
 
 ---
