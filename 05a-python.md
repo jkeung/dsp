@@ -20,7 +20,7 @@ Lists and tuples are similar because they both hold an array of values. They dif
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-Python lists and sets are similar because they are both a collection of elements. They differ because lists can contain duplicates and are ordered, whereas sets only contain unique values and are unordered. Sets are faster in terms of finding if an element exists, but is slower when it comes to iterating over its contents. This is because sets are unordered.s
+Python lists and sets are similar because they are both a collection of elements. They differ because lists can contain duplicates and are ordered, whereas sets only contain unique values and are unordered. Sets are faster in terms of finding if an element exists, but is slower when it comes to iterating over its contents. This is because sets are unordered.
 
 ---
 
@@ -46,7 +46,30 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 A list comprehension is a concise way to create a list.
 Ex. 1
-[(x,y,z) for x in arr for y in arr for z in arr if x+y+z= 0]
+INPUT: arr = [1,2,3]
+[x + 1 for x in arr if x >= 2]
+OUTPUT: [3, 4]
+
+-'map' equivalent example:
+INPUT:def add_one(x):
+    return x+1
+map(add_one, arr)
+OUTPUT: [2, 3, 4]
+
+-'filter' equivalent example:
+INPUT: filter(lambda x: x>=2, x)
+OUTPUT: [2, 3]
+
+-Set comprehension example:
+INPUT: a = {x for x in 'abcdefghijk' if x not in 'abc'}
+a
+OUTPUT: set(['e', 'd', 'g', 'f', 'i', 'h', 'k', 'j'])
+
+-Dictionary comprehension example:
+INPUT: d = {n: n**2 for n in range(5)}
+d
+OUTPUT: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+
 ---
 
 ###Complete the following problems by editing the files below:
@@ -54,13 +77,13 @@ Ex. 1
 ###Q5. Datetime
 Use Python to compute days between start and stop date.   
 a.  
-
 ```
 date_start = '01-02-2013'    
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 937
+
 
 b.  
 ```
@@ -68,7 +91,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 513
 
 c.  
 ```
@@ -76,7 +99,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  
+>> 7850
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
