@@ -42,14 +42,14 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-* Lambda is an anonymous function that is used to create functions "on-the-fly". Here is an example:
+##### Lambda is an anonymous function that is used to create functions "on-the-fly". Here is an example:
 ```
 g = lambda x:x*2
 g(3)
 6
 ```
 
-* 
+##### Lambda example
 ```
 x = [2,4,6,1,3,5]
 f = lambda x:sorted(x)
@@ -63,8 +63,9 @@ f(x)
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-* A list comprehension is a concise way to create a list.
-Ex. 1
+A list comprehension is a concise way to create a list.
+
+##### Ex. 1
 - INPUT: 
 ```
 arr = [1,2,3]
@@ -75,7 +76,7 @@ arr = [1,2,3]
 [3, 4]
 ```
 
-* 'map' equivalent example:
+##### 'map' equivalent example:
 - INPUT:
 ```
 def add_one(x):
@@ -87,7 +88,7 @@ map(add_one, arr)
 [2, 3, 4]
 ```
 
-* 'filter' equivalent example:
+##### 'filter' equivalent example:
 - INPUT: 
 ```
 filter(lambda x: x>=2, x)
@@ -97,7 +98,7 @@ filter(lambda x: x>=2, x)
 [2, 3]
 ```
 
-* Set comprehension example:
+##### Set comprehension example:
 - INPUT: 
 ```
 a = {x for x in 'abcdefghijk' if x not in 'abc'}
@@ -108,9 +109,10 @@ a
 set(['e', 'd', 'g', 'f', 'i', 'h', 'k', 'j'])
 ```
 
-* Dictionary comprehension example:
+##### Dictionary comprehension example:
 - INPUT: 
-```d = {n: n**2 for n in range(5)}
+```
+d = {n: n**2 for n in range(5)}
 d
 ```
 - OUTPUT: 
