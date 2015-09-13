@@ -16,7 +16,9 @@ Use regular expressions to:
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> {'0': 1,
+>> 
+```
+{'0': 1,
  'BSEd': 1,
  'JD': 1,
  'MA': 1,
@@ -25,19 +27,22 @@ Use regular expressions to:
  'MS': 2,
  'PhD': 31,
  'ScD': 6}
-
+```
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> {'Assistant Professor is Biostatistics': 1,
+>> 
+```
+{'Assistant Professor is Biostatistics': 1,
  'Assistant Professor of Biostatistics': 11,
  'Associate Professor of Biostatistics': 12,
  'Professor of Biostatistics': 13}
-
+```
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
->> ['bellamys@mail.med.upenn.edu',
+>> 
+```['bellamys@mail.med.upenn.edu',
  'warren@upenn.edu',
  'bryanma@upenn.edu',
  'jinboche@upenn.edu',
@@ -74,11 +79,14 @@ Use regular expressions to:
  'sxie@mail.med.upenn.edu',
  'dxie@upenn.edu',
  'weiyang@mail.med.upenn.edu']
-
+```
 
 ####Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
 
->> {'@cceb.med.upenn.edu', '@email.chop.edu', '@mail.med.upenn.edu', '@upenn.edu'}
+>> 
+```
+{'@cceb.med.upenn.edu', '@email.chop.edu', '@mail.med.upenn.edu', '@upenn.edu'}
+```
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
 
