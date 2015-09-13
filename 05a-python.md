@@ -12,7 +12,9 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
-Lists and tuples are similar because they both hold an array of values. They differ because tuples are immutable, they cannot be changed or edited, only recreated. Tuples are used as keys in dictionaries because the keys in dictionaries are immutable.
+* Lists and tuples are similar because they both hold an array of values. 
+* They differ because tuples are immutable, they cannot be changed or edited, only recreated. 
+* Tuples are used as keys in dictionaries because the keys in dictionaries are immutable.
 
 ---
 
@@ -20,7 +22,15 @@ Lists and tuples are similar because they both hold an array of values. They dif
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-Python lists and sets are similar because they are both a collection of elements. They differ because lists can contain duplicates and are ordered, whereas sets only contain unique values and are unordered. Sets are faster in terms of finding if an element exists, but is slower when it comes to iterating over its contents. This is because sets are unordered.
+* Python lists and sets are similar because they are both a collection of elements. 
+* They differ because lists can contain duplicates and are ordered, whereas sets only contain unique values and are unordered. 
+* Sets are faster in terms of finding if an element exists, but is slower when it comes to iterating over its contents. This is because sets are unordered.
+
+* List Example:
+['a','b','c','a','b']
+
+* Set Example:
+['a','b','c']
 
 ---
 
@@ -28,12 +38,12 @@ Python lists and sets are similar because they are both a collection of elements
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-Lambda is an anonymous function that is used to create functions "on-the-fly". Here is an example:
+* Lambda is an anonymous function that is used to create functions "on-the-fly". Here is an example:
 g = lambda x:x*2
 g(3)
 6
 
-x = [2,4,6,1,3,5]
+* x = [2,4,6,1,3,5]
 f = lambda x:sorted(x)
 f(x)
 [1,2,3,4,5,6]
@@ -44,28 +54,28 @@ f(x)
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-A list comprehension is a concise way to create a list.
+* A list comprehension is a concise way to create a list.
 Ex. 1
 INPUT: arr = [1,2,3]
 [x + 1 for x in arr if x >= 2]
 OUTPUT: [3, 4]
 
--'map' equivalent example:
+* 'map' equivalent example:
 INPUT:def add_one(x):
     return x+1
 map(add_one, arr)
 OUTPUT: [2, 3, 4]
 
--'filter' equivalent example:
+* 'filter' equivalent example:
 INPUT: filter(lambda x: x>=2, x)
 OUTPUT: [2, 3]
 
--Set comprehension example:
+* Set comprehension example:
 INPUT: a = {x for x in 'abcdefghijk' if x not in 'abc'}
 a
 OUTPUT: set(['e', 'd', 'g', 'f', 'i', 'h', 'k', 'j'])
 
--Dictionary comprehension example:
+* Dictionary comprehension example:
 INPUT: d = {n: n**2 for n in range(5)}
 d
 OUTPUT: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
