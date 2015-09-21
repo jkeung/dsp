@@ -11,7 +11,7 @@ and the 90\% confidence interval.
 Repeat the experiment with a few different values of $n$ and make
 a plot of standard error versus $n$.
 
-'''
+```
 L = []
 n = 10
 lam = 2
@@ -22,24 +22,24 @@ for x in range(times):
     L.append(lamhat)
 cdf = thinkstats2.Cdf(L)
 thinkplot.Cdf(cdf)
-'''
+```
 
 Compute the standard error
 
-'''
+```
 from estimation import RMSE, MeanError
 stderr = RMSE(estimates, lam)
 stderr
-'''
+```
 
 >> 0.8173442114393894
 
 Compute 90% Confidence Interval
 
-'''
+```
 ci = cdf.Percentile(5), cdf.Percentile(95)
 print('confidence interval', ci)
-'''
+```
 
 >> ('confidence interval', (1.2828718233973802, 3.7511282393274685))
 
